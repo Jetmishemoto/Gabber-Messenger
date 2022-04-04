@@ -95,9 +95,9 @@
 		C5A0F66927FB994F00ED5920 /* Gabber Messenger */ = {
 			isa = PBXGroup;
 			children = (
-				C5A0F66A27FB994F00ED5920 /* Gabber_MessengerApp.swift */,
-				C5A0F66C27FB994F00ED5920 /* ContentView.swift */,
-				C5A0F66E27FB996A00ED5920 /* Assets.xcassets */,
+				C5A0F69A27FB99C600ED5920 /* Models */,
+				C5A0F69927FB99A500ED5920 /* Resources */,
+				C5A0F69827FB999900ED5920 /* Windows */,
 				C5A0F67327FB996A00ED5920 /* Info.plist */,
 				C5A0F67027FB996A00ED5920 /* Preview Content */,
 			);
@@ -128,6 +128,30 @@
 				C5A0F68927FB996A00ED5920 /* Info.plist */,
 			);
 			path = "Gabber MessengerUITests";
+			sourceTree = "<group>";
+		};
+		C5A0F69827FB999900ED5920 /* Windows */ = {
+			isa = PBXGroup;
+			children = (
+				C5A0F66C27FB994F00ED5920 /* ContentView.swift */,
+			);
+			path = Windows;
+			sourceTree = "<group>";
+		};
+		C5A0F69927FB99A500ED5920 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C5A0F66A27FB994F00ED5920 /* Gabber_MessengerApp.swift */,
+				C5A0F66E27FB996A00ED5920 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C5A0F69A27FB99C600ED5920 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
