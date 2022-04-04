@@ -11,7 +11,7 @@ import SwiftUI
 struct Gabber_MessengerApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ConversationListWindow()
         }
     }
 }

@@ -13,6 +13,14 @@
 		C5A0F67227FB996A00ED5920 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5A0F67127FB996A00ED5920 /* Preview Assets.xcassets */; };
 		C5A0F67D27FB996A00ED5920 /* Gabber_MessengerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A0F67C27FB996A00ED5920 /* Gabber_MessengerTests.swift */; };
 		C5A0F68827FB996A00ED5920 /* Gabber_MessengerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A0F68727FB996A00ED5920 /* Gabber_MessengerUITests.swift */; };
+		C5A0F69F27FB9C7D00ED5920 /* SignInWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A0F69E27FB9C7D00ED5920 /* SignInWindow.swift */; };
+		C5A0F6A427FB9D1800ED5920 /* SignUpWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A0F6A327FB9D1800ED5920 /* SignUpWindow.swift */; };
+		C5A0F6A927FBA3DC00ED5920 /* ChatWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A0F6A827FBA3DC00ED5920 /* ChatWindow.swift */; };
+		C5A0F6AE27FBA3EE00ED5920 /* ChatRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A0F6AD27FBA3EE00ED5920 /* ChatRow.swift */; };
+		C5A0F6B327FBA40F00ED5920 /* SearchWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A0F6B227FBA40F00ED5920 /* SearchWindow.swift */; };
+		C5A0F6B827FBA42B00ED5920 /* SendButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A0F6B727FBA42B00ED5920 /* SendButton.swift */; };
+		C5A0F6BD27FBA44600ED5920 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A0F6BC27FBA44600ED5920 /* Message.swift */; };
+		C5A0F6C227FBA46500ED5920 /* AppStateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A0F6C127FBA46500ED5920 /* AppStateModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +53,14 @@
 		C5A0F68327FB996A00ED5920 /* Gabber MessengerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Gabber MessengerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5A0F68727FB996A00ED5920 /* Gabber_MessengerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gabber_MessengerUITests.swift; sourceTree = "<group>"; };
 		C5A0F68927FB996A00ED5920 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5A0F69E27FB9C7D00ED5920 /* SignInWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInWindow.swift; sourceTree = "<group>"; };
+		C5A0F6A327FB9D1800ED5920 /* SignUpWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpWindow.swift; sourceTree = "<group>"; };
+		C5A0F6A827FBA3DC00ED5920 /* ChatWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatWindow.swift; sourceTree = "<group>"; };
+		C5A0F6AD27FBA3EE00ED5920 /* ChatRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRow.swift; sourceTree = "<group>"; };
+		C5A0F6B227FBA40F00ED5920 /* SearchWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchWindow.swift; sourceTree = "<group>"; };
+		C5A0F6B727FBA42B00ED5920 /* SendButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendButton.swift; sourceTree = "<group>"; };
+		C5A0F6BC27FBA44600ED5920 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		C5A0F6C127FBA46500ED5920 /* AppStateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStateModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +150,12 @@
 			isa = PBXGroup;
 			children = (
 				C5A0F66C27FB994F00ED5920 /* ContentView.swift */,
+				C5A0F69E27FB9C7D00ED5920 /* SignInWindow.swift */,
+				C5A0F6A327FB9D1800ED5920 /* SignUpWindow.swift */,
+				C5A0F6A827FBA3DC00ED5920 /* ChatWindow.swift */,
+				C5A0F6AD27FBA3EE00ED5920 /* ChatRow.swift */,
+				C5A0F6B227FBA40F00ED5920 /* SearchWindow.swift */,
+				C5A0F6B727FBA42B00ED5920 /* SendButton.swift */,
 			);
 			path = Windows;
 			sourceTree = "<group>";
@@ -150,6 +172,8 @@
 		C5A0F69A27FB99C600ED5920 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				C5A0F6BC27FBA44600ED5920 /* Message.swift */,
+				C5A0F6C127FBA46500ED5920 /* AppStateModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -283,8 +307,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5A0F6B327FBA40F00ED5920 /* SearchWindow.swift in Sources */,
+				C5A0F6B827FBA42B00ED5920 /* SendButton.swift in Sources */,
 				C5A0F66D27FB994F00ED5920 /* ContentView.swift in Sources */,
+				C5A0F6BD27FBA44600ED5920 /* Message.swift in Sources */,
+				C5A0F69F27FB9C7D00ED5920 /* SignInWindow.swift in Sources */,
+				C5A0F6A927FBA3DC00ED5920 /* ChatWindow.swift in Sources */,
 				C5A0F66B27FB994F00ED5920 /* Gabber_MessengerApp.swift in Sources */,
+				C5A0F6AE27FBA3EE00ED5920 /* ChatRow.swift in Sources */,
+				C5A0F6A427FB9D1800ED5920 /* SignUpWindow.swift in Sources */,
+				C5A0F6C227FBA46500ED5920 /* AppStateModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
