@@ -1,0 +1,579 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C5A0F66B27FB994F00ED5920 /* Gabber_MessengerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A0F66A27FB994F00ED5920 /* Gabber_MessengerApp.swift */; };
+		C5A0F66D27FB994F00ED5920 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A0F66C27FB994F00ED5920 /* ContentView.swift */; };
+		C5A0F66F27FB996A00ED5920 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5A0F66E27FB996A00ED5920 /* Assets.xcassets */; };
+		C5A0F67227FB996A00ED5920 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5A0F67127FB996A00ED5920 /* Preview Assets.xcassets */; };
+		C5A0F67D27FB996A00ED5920 /* Gabber_MessengerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A0F67C27FB996A00ED5920 /* Gabber_MessengerTests.swift */; };
+		C5A0F68827FB996A00ED5920 /* Gabber_MessengerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A0F68727FB996A00ED5920 /* Gabber_MessengerUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C5A0F67927FB996A00ED5920 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C5A0F65F27FB994E00ED5920 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C5A0F66627FB994F00ED5920;
+			remoteInfo = "Gabber Messenger";
+		};
+		C5A0F68427FB996A00ED5920 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C5A0F65F27FB994E00ED5920 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C5A0F66627FB994F00ED5920;
+			remoteInfo = "Gabber Messenger";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C5A0F66727FB994F00ED5920 /* Gabber Messenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gabber Messenger.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5A0F66A27FB994F00ED5920 /* Gabber_MessengerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gabber_MessengerApp.swift; sourceTree = "<group>"; };
+		C5A0F66C27FB994F00ED5920 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C5A0F66E27FB996A00ED5920 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C5A0F67127FB996A00ED5920 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C5A0F67327FB996A00ED5920 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5A0F67827FB996A00ED5920 /* Gabber MessengerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Gabber MessengerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5A0F67C27FB996A00ED5920 /* Gabber_MessengerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gabber_MessengerTests.swift; sourceTree = "<group>"; };
+		C5A0F67E27FB996A00ED5920 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5A0F68327FB996A00ED5920 /* Gabber MessengerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Gabber MessengerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5A0F68727FB996A00ED5920 /* Gabber_MessengerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gabber_MessengerUITests.swift; sourceTree = "<group>"; };
+		C5A0F68927FB996A00ED5920 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C5A0F66427FB994F00ED5920 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5A0F67527FB996A00ED5920 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5A0F68027FB996A00ED5920 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C5A0F65E27FB994E00ED5920 = {
+			isa = PBXGroup;
+			children = (
+				C5A0F66927FB994F00ED5920 /* Gabber Messenger */,
+				C5A0F67B27FB996A00ED5920 /* Gabber MessengerTests */,
+				C5A0F68627FB996A00ED5920 /* Gabber MessengerUITests */,
+				C5A0F66827FB994F00ED5920 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C5A0F66827FB994F00ED5920 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C5A0F66727FB994F00ED5920 /* Gabber Messenger.app */,
+				C5A0F67827FB996A00ED5920 /* Gabber MessengerTests.xctest */,
+				C5A0F68327FB996A00ED5920 /* Gabber MessengerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C5A0F66927FB994F00ED5920 /* Gabber Messenger */ = {
+			isa = PBXGroup;
+			children = (
+				C5A0F66A27FB994F00ED5920 /* Gabber_MessengerApp.swift */,
+				C5A0F66C27FB994F00ED5920 /* ContentView.swift */,
+				C5A0F66E27FB996A00ED5920 /* Assets.xcassets */,
+				C5A0F67327FB996A00ED5920 /* Info.plist */,
+				C5A0F67027FB996A00ED5920 /* Preview Content */,
+			);
+			path = "Gabber Messenger";
+			sourceTree = "<group>";
+		};
+		C5A0F67027FB996A00ED5920 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C5A0F67127FB996A00ED5920 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C5A0F67B27FB996A00ED5920 /* Gabber MessengerTests */ = {
+			isa = PBXGroup;
+			children = (
+				C5A0F67C27FB996A00ED5920 /* Gabber_MessengerTests.swift */,
+				C5A0F67E27FB996A00ED5920 /* Info.plist */,
+			);
+			path = "Gabber MessengerTests";
+			sourceTree = "<group>";
+		};
+		C5A0F68627FB996A00ED5920 /* Gabber MessengerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C5A0F68727FB996A00ED5920 /* Gabber_MessengerUITests.swift */,
+				C5A0F68927FB996A00ED5920 /* Info.plist */,
+			);
+			path = "Gabber MessengerUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C5A0F66627FB994F00ED5920 /* Gabber Messenger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5A0F68C27FB996A00ED5920 /* Build configuration list for PBXNativeTarget "Gabber Messenger" */;
+			buildPhases = (
+				C5A0F66327FB994F00ED5920 /* Sources */,
+				C5A0F66427FB994F00ED5920 /* Frameworks */,
+				C5A0F66527FB994F00ED5920 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Gabber Messenger";
+			productName = "Gabber Messenger";
+			productReference = C5A0F66727FB994F00ED5920 /* Gabber Messenger.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C5A0F67727FB996A00ED5920 /* Gabber MessengerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5A0F68F27FB996A00ED5920 /* Build configuration list for PBXNativeTarget "Gabber MessengerTests" */;
+			buildPhases = (
+				C5A0F67427FB996A00ED5920 /* Sources */,
+				C5A0F67527FB996A00ED5920 /* Frameworks */,
+				C5A0F67627FB996A00ED5920 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C5A0F67A27FB996A00ED5920 /* PBXTargetDependency */,
+			);
+			name = "Gabber MessengerTests";
+			productName = "Gabber MessengerTests";
+			productReference = C5A0F67827FB996A00ED5920 /* Gabber MessengerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C5A0F68227FB996A00ED5920 /* Gabber MessengerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5A0F69227FB996A00ED5920 /* Build configuration list for PBXNativeTarget "Gabber MessengerUITests" */;
+			buildPhases = (
+				C5A0F67F27FB996A00ED5920 /* Sources */,
+				C5A0F68027FB996A00ED5920 /* Frameworks */,
+				C5A0F68127FB996A00ED5920 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C5A0F68527FB996A00ED5920 /* PBXTargetDependency */,
+			);
+			name = "Gabber MessengerUITests";
+			productName = "Gabber MessengerUITests";
+			productReference = C5A0F68327FB996A00ED5920 /* Gabber MessengerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C5A0F65F27FB994E00ED5920 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					C5A0F66627FB994F00ED5920 = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					C5A0F67727FB996A00ED5920 = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = C5A0F66627FB994F00ED5920;
+					};
+					C5A0F68227FB996A00ED5920 = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = C5A0F66627FB994F00ED5920;
+					};
+				};
+			};
+			buildConfigurationList = C5A0F66227FB994E00ED5920 /* Build configuration list for PBXProject "Gabber Messenger" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C5A0F65E27FB994E00ED5920;
+			productRefGroup = C5A0F66827FB994F00ED5920 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C5A0F66627FB994F00ED5920 /* Gabber Messenger */,
+				C5A0F67727FB996A00ED5920 /* Gabber MessengerTests */,
+				C5A0F68227FB996A00ED5920 /* Gabber MessengerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C5A0F66527FB994F00ED5920 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5A0F67227FB996A00ED5920 /* Preview Assets.xcassets in Resources */,
+				C5A0F66F27FB996A00ED5920 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5A0F67627FB996A00ED5920 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5A0F68127FB996A00ED5920 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C5A0F66327FB994F00ED5920 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5A0F66D27FB994F00ED5920 /* ContentView.swift in Sources */,
+				C5A0F66B27FB994F00ED5920 /* Gabber_MessengerApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5A0F67427FB996A00ED5920 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5A0F67D27FB996A00ED5920 /* Gabber_MessengerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5A0F67F27FB996A00ED5920 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5A0F68827FB996A00ED5920 /* Gabber_MessengerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C5A0F67A27FB996A00ED5920 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C5A0F66627FB994F00ED5920 /* Gabber Messenger */;
+			targetProxy = C5A0F67927FB996A00ED5920 /* PBXContainerItemProxy */;
+		};
+		C5A0F68527FB996A00ED5920 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C5A0F66627FB994F00ED5920 /* Gabber Messenger */;
+			targetProxy = C5A0F68427FB996A00ED5920 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C5A0F68A27FB996A00ED5920 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C5A0F68B27FB996A00ED5920 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C5A0F68D27FB996A00ED5920 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Gabber Messenger/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Gabber Messenger/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "vektor-ideas.Gabber-Messenger";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C5A0F68E27FB996A00ED5920 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Gabber Messenger/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Gabber Messenger/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "vektor-ideas.Gabber-Messenger";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C5A0F69027FB996A00ED5920 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Gabber MessengerTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "vektor-ideas.Gabber-MessengerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gabber Messenger.app/Gabber Messenger";
+			};
+			name = Debug;
+		};
+		C5A0F69127FB996A00ED5920 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Gabber MessengerTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "vektor-ideas.Gabber-MessengerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gabber Messenger.app/Gabber Messenger";
+			};
+			name = Release;
+		};
+		C5A0F69327FB996A00ED5920 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Gabber MessengerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "vektor-ideas.Gabber-MessengerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Gabber Messenger";
+			};
+			name = Debug;
+		};
+		C5A0F69427FB996A00ED5920 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Gabber MessengerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "vektor-ideas.Gabber-MessengerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Gabber Messenger";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C5A0F66227FB994E00ED5920 /* Build configuration list for PBXProject "Gabber Messenger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5A0F68A27FB996A00ED5920 /* Debug */,
+				C5A0F68B27FB996A00ED5920 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C5A0F68C27FB996A00ED5920 /* Build configuration list for PBXNativeTarget "Gabber Messenger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5A0F68D27FB996A00ED5920 /* Debug */,
+				C5A0F68E27FB996A00ED5920 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C5A0F68F27FB996A00ED5920 /* Build configuration list for PBXNativeTarget "Gabber MessengerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5A0F69027FB996A00ED5920 /* Debug */,
+				C5A0F69127FB996A00ED5920 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C5A0F69227FB996A00ED5920 /* Build configuration list for PBXNativeTarget "Gabber MessengerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5A0F69327FB996A00ED5920 /* Debug */,
+				C5A0F69427FB996A00ED5920 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C5A0F65F27FB994E00ED5920 /* Project object */;
+}
