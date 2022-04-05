@@ -9,7 +9,12 @@ import SwiftUI
 
 struct ChatWindow: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ScrollView(.vertical){
+            ChatRow(type: .sent)
+                .padding(5)
+            ChatRow(type: .received)
+                .padding(5)
+        }
     }
 }
 

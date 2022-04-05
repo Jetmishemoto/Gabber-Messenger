@@ -26,19 +26,35 @@ struct ChatRow: View {
         HStack{
             
             if isSender{ Spacer()}
+            
+            if !isSender{
+                VStack{
+                    Spacer()
+                    Circle()
+                        .frame(width: 45, height: 45)
+                        .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
+                }
+            }
             HStack{
-                Text("Hey,How's it going today")
+                Text("Hey,How's it going today,Did you get the thing i sent in the mail?")
                     .foregroundColor(isSender ? Color.white : Color(.label))
                     .padding()
                    
                 
             }
-            .background(isSender ? Color.purple : Color(.systemGreen) )
-            .cornerRadius(50)
+          
+            .background(isSender ? Color.purple : Color(.systemGreen))
+            .padding(isSender ? .leading : .trailing,
+                     isSender ? UIScreen.main.bounds.width/3 :UIScreen.main.bounds.width/5 )
+            .cornerRadius(10)
             
             if !isSender{ Spacer()}
             
         }
+        
+      
+        
+        
     }
 }
 
