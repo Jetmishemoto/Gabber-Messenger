@@ -15,3 +15,9 @@ struct Gabber_MessengerApp: App {
         }
     }
 }
+
+struct Gabber_MessengerApp_Previews: PreviewProvider {
+    static var previews: some View {
+        Text("Hello, Me")
+    }
+}

@@ -8,13 +8,40 @@
 import SwiftUI
 
 struct ChatRow: View {
+    let type: MessageType
+    
+    
+    var isSender: Bool{
+        return type == .sent
+    }
+  
+    init(type: MessageType){
+        self.type = type
+        
+    }
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+      
+        
+        HStack{
+            
+            if isSender{ Spacer()}
+            HStack{
+                Text("Hey,How's it going today")
+                    .padding()
+                   
+                
+            }
+            .background(Color.purple)
+            .cornerRadius(6)
+            
+        }
     }
 }
 
 struct ChatRow_Previews: PreviewProvider {
     static var previews: some View {
-        ChatRow()
+        ChatRow(type: .sent)
+            .preferredColorScheme(.dark)
     }
 }

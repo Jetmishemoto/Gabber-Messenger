@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+
+enum MessageType: String{
+    
+    case sent
+    case received
+}
