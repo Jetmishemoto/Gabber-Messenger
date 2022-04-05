@@ -36,7 +36,7 @@ struct ChatRow: View {
                 }
             }
             HStack{
-                Text("Hey,How's it going today,Did you get the thing i sent in the mail?")
+                Text("Hey,How's it going today,Did you get the thing I sent in the mail?")
                     .foregroundColor(isSender ? Color.white : Color(.label))
                     .padding()
                    
