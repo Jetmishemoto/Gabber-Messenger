@@ -28,20 +28,31 @@ struct ChatRow: View {
             if isSender{ Spacer()}
             HStack{
                 Text("Hey,How's it going today")
+                    .foregroundColor(isSender ? Color.white : Color(.label))
                     .padding()
                    
                 
             }
-            .background(Color.purple)
-            .cornerRadius(6)
+            .background(isSender ? Color.purple : Color(.systemGreen) )
+            .cornerRadius(50)
+            
+            if !isSender{ Spacer()}
             
         }
     }
 }
 
+
+
 struct ChatRow_Previews: PreviewProvider {
     static var previews: some View {
-        ChatRow(type: .sent)
-            .preferredColorScheme(.dark)
+        Group{
+            ChatRow(type: .sent)
+                .preferredColorScheme(.dark)
+            ChatRow(type: .received)
+                .preferredColorScheme(.dark)
+            
+        }
+       
     }
 }
