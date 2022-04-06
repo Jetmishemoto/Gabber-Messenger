@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C5A0F66B27FB994F00ED5920 /* Gabber_MessengerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A0F66A27FB994F00ED5920 /* Gabber_MessengerApp.swift */; };
-		C5A0F66D27FB994F00ED5920 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A0F66C27FB994F00ED5920 /* ContentView.swift */; };
+		C5A0F66D27FB994F00ED5920 /* ConversationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A0F66C27FB994F00ED5920 /* ConversationView.swift */; };
 		C5A0F66F27FB996A00ED5920 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5A0F66E27FB996A00ED5920 /* Assets.xcassets */; };
 		C5A0F67227FB996A00ED5920 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5A0F67127FB996A00ED5920 /* Preview Assets.xcassets */; };
 		C5A0F67D27FB996A00ED5920 /* Gabber_MessengerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A0F67C27FB996A00ED5920 /* Gabber_MessengerTests.swift */; };
@@ -43,7 +43,7 @@
 /* Begin PBXFileReference section */
 		C5A0F66727FB994F00ED5920 /* Gabber Messenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gabber Messenger.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5A0F66A27FB994F00ED5920 /* Gabber_MessengerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gabber_MessengerApp.swift; sourceTree = "<group>"; };
-		C5A0F66C27FB994F00ED5920 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C5A0F66C27FB994F00ED5920 /* ConversationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationView.swift; sourceTree = "<group>"; };
 		C5A0F66E27FB996A00ED5920 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C5A0F67127FB996A00ED5920 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C5A0F67327FB996A00ED5920 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -149,7 +149,7 @@
 		C5A0F69827FB999900ED5920 /* Windows */ = {
 			isa = PBXGroup;
 			children = (
-				C5A0F66C27FB994F00ED5920 /* ContentView.swift */,
+				C5A0F66C27FB994F00ED5920 /* ConversationView.swift */,
 				C5A0F69E27FB9C7D00ED5920 /* SignInWindow.swift */,
 				C5A0F6A327FB9D1800ED5920 /* SignUpWindow.swift */,
 				C5A0F6A827FBA3DC00ED5920 /* ChatWindow.swift */,
@@ -309,7 +309,7 @@
 			files = (
 				C5A0F6B327FBA40F00ED5920 /* SearchWindow.swift in Sources */,
 				C5A0F6B827FBA42B00ED5920 /* SendButton.swift in Sources */,
-				C5A0F66D27FB994F00ED5920 /* ContentView.swift in Sources */,
+				C5A0F66D27FB994F00ED5920 /* ConversationView.swift in Sources */,
 				C5A0F6BD27FBA44600ED5920 /* Message.swift in Sources */,
 				C5A0F69F27FB9C7D00ED5920 /* SignInWindow.swift in Sources */,
 				C5A0F6A927FBA3DC00ED5920 /* ChatWindow.swift in Sources */,
