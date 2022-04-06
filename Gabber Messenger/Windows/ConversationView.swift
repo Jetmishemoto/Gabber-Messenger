@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ConversationListWindow: View {
-    let KnownContacts = ["Mike","Gary","Tom","Anna"]
+    let KnownContacts = ["Mike","Orange","Tom","Anna","Bro","Bae","Peppercorn"]
     
     var body: some View{
         NavigationView{
@@ -20,15 +20,16 @@ struct ConversationListWindow: View {
                             HStack{
                                 Circle()
                                     .frame(width: 50, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                                    .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
+                                    .foregroundColor(.purple)
                                 
                                 
                                 Text(name)
                                     .bold()
                                     .font(.system(size: 20))
                                     .foregroundColor(Color(.label))
-                                    .underline(/*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/, color: Color.blue)
-                                    .position(CGPoint(x: 45.0, y: 10.0))
+                                    .underline(/*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/, color: Color.purple)
+                                    .position(CGPoint(x: 45.0, y: 00.0))
+//                                padding(UIScreen.main.bounds.width/5)
                                     
                                     
                                 

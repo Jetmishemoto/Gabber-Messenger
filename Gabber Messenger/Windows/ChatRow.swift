@@ -32,7 +32,7 @@ struct ChatRow: View {
                     Spacer()
                     Circle()
                         .frame(width: 45, height: 45)
-                        .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
+                        .foregroundColor(.purple)
                 }
             }
             HStack{
