@@ -15,7 +15,7 @@ struct ConversationListWindow: View {
             ScrollView(.vertical){
                 ForEach(KnownContacts, id: \.self){ name in
                     NavigationLink(
-                        destination: ChatWindow(),
+                        destination: ChatWindow(otherContacts: name),
                         label: {
                             HStack{
                                 Circle()
@@ -35,6 +35,7 @@ struct ConversationListWindow: View {
                                 
                                     
                                 Spacer()
+                                
                             }
                             .padding()
                         })
@@ -43,11 +44,27 @@ struct ConversationListWindow: View {
                 
             }
             .navigationTitle("Messages")
-            
-            
-            
+            .toolbar{
+                ToolbarItem(placement:
+                                ToolbarItemPlacement.navigationBarTrailing){
+                    Button("Sign Out"){
+                        self.signOut()
+                      }
+                    }
+                
+                ToolbarItem(placement:
+                                ToolbarItemPlacement.navigationBarLeading){
+                    Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                        Image(systemName: "magnifyingglass")
+                    })
+                }
+                
+            }
+ 
         }
+       
     }
+    func signOut(){}
 }
 
 struct ContentView_Previews: PreviewProvider {

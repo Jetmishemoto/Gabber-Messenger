@@ -14,8 +14,10 @@ struct ChatRow: View {
     var isSender: Bool{
         return type == .sent
     }
+    let text: String
   
-    init(type: MessageType){
+    init(text: String ,type: MessageType){
+        self.text = text
         self.type = type
         
     }
@@ -36,7 +38,7 @@ struct ChatRow: View {
                 }
             }
             HStack{
-                Text("Hey,How's it going today,Did you get the thing I sent in the mail?")
+                Text(text)
                     .foregroundColor(isSender ? Color.white : Color(.label))
                     .padding()
                    
@@ -63,9 +65,9 @@ struct ChatRow: View {
 struct ChatRow_Previews: PreviewProvider {
     static var previews: some View {
         Group{
-            ChatRow(type: .sent)
+            ChatRow(text: "Test" ,type: .sent)
                 .preferredColorScheme(.dark)
-            ChatRow(type: .received)
+            ChatRow(text: "Test" ,type: .received)
                 .preferredColorScheme(.dark)
             
         }

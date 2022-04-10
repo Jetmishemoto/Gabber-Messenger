@@ -11,12 +11,17 @@ struct ChatWindow: View {
     
     @State var message: String = ""
     
+    let otherContacts : String
+    init(otherContacts : String){
+        self.otherContacts = otherContacts
+    }
+    
     var body: some View {
         VStack{
             ScrollView(.vertical){
-                ChatRow(type: .sent)
+                ChatRow(text:"Hello", type: .sent)
                     .padding(5)
-                ChatRow(type: .received)
+                ChatRow(text:"Hello", type: .received)
                     .padding(5)
             }
             
@@ -34,13 +39,13 @@ struct ChatWindow: View {
             .padding()
         }
         
-        .navigationTitle("Bro")
+        .navigationTitle(otherContacts)
     }
 }
 
 struct ChatWindow_Previews: PreviewProvider {
     static var previews: some View {
-        ChatWindow()
+        ChatWindow(otherContacts: "")
             .preferredColorScheme(.dark)
     }
 }
