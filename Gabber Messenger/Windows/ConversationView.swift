@@ -29,6 +29,8 @@ struct ConversationListWindow: View {
                                     .foregroundColor(Color(.label))
                                     .underline(/*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/, color: Color.purple)
                                     .position(CGPoint(x: 45.0, y: 00.0))
+                                    .frame(alignment: .leading)
+                                    
 //                                padding(UIScreen.main.bounds.width/5)
                                     
                                     
@@ -45,18 +47,18 @@ struct ConversationListWindow: View {
             }
             .navigationTitle("Messages")
             .toolbar{
-                ToolbarItem(placement:
-                                ToolbarItemPlacement.navigationBarTrailing){
+                ToolbarItem(placement: .navigationBarTrailing){
                     Button("Sign Out"){
                         self.signOut()
                       }
                     }
                 
-                ToolbarItem(placement:
-                                ToolbarItemPlacement.navigationBarLeading){
-                    Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
-                        Image(systemName: "magnifyingglass")
-                    })
+                ToolbarItem(placement: .navigationBarLeading){
+                    NavigationLink(
+                        destination: SearchWindow(),
+                        label: {
+                            Image(systemName: "magnifyingglass")
+                        })
                 }
                 
             }
@@ -64,7 +66,10 @@ struct ConversationListWindow: View {
         }
        
     }
-    func signOut(){}
+    
+    func signOut(){
+        
+    }
 }
 
 struct ContentView_Previews: PreviewProvider {

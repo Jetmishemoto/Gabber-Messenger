@@ -9,12 +9,18 @@ import SwiftUI
 
 struct SearchWindow: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            
+        }
+        .navigationTitle("Search")
+          
     }
+ 
 }
 
 struct SearchWindow_Previews: PreviewProvider {
     static var previews: some View {
         SearchWindow()
+            .preferredColorScheme(.dark)
     }
 }
