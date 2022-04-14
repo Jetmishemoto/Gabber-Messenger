@@ -6,3 +6,32 @@
 //
 
 import Foundation
+import SwiftUI
+
+class AppStateMachine: ObservableObject {
+    
+    // is user signed in
+    
+}
+
+
+extension AppStateMachine{
+    //Conversations
+    
+}
+
+
+extension AppStateMachine{
+    //Get chat / send messages
+    
+}
+
+
+extension AppStateMachine{
+    //sign in and sign up
+    
+}
+
+
+
+

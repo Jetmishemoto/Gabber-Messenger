@@ -11,9 +11,10 @@ struct SearchWindow: View {
     @State var text: String = ""
     
     let KnownContacts = ["Max"]
+    let completion : ((String) -> Void)
     
-    init(completion: @escaping ((String)-> Void)) {
-        <#statements#>
+    init(completion: @escaping ((String) -> Void)) {
+        self.completion = completion
     }
     
     var body: some View {
@@ -34,9 +35,9 @@ struct SearchWindow: View {
                                 .bold()
                             Spacer()
                         }
-                        .onTapGesture(count: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/, perform: {
-                            /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Code@*/ /*@END_MENU_TOKEN@*/
-                        })
+                        .onTapGesture {
+                            completion(name)
+                        }
                         
                     }
                     
@@ -58,7 +59,7 @@ struct SearchWindow: View {
 
 struct SearchWindow_Previews: PreviewProvider {
     static var previews: some View {
-        SearchWindow()
+        SearchWindow(){ _ in }
             .preferredColorScheme(.dark)
     }
 }

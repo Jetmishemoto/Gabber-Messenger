@@ -10,6 +10,9 @@ import SwiftUI
 struct ConversationListWindow: View {
     let KnownContacts = ["Mike","Orange","Tom","Anna","Bro","Bae","Peppercorn"]
     
+    @State var otherKnownContacts: String = ""
+    @State var showChat = false
+    
     var body: some View{
         NavigationView{
             ScrollView(.vertical){
@@ -58,13 +61,20 @@ struct ConversationListWindow: View {
                     HStack{
                         Text("Search")
                         NavigationLink(
-                        destination: SearchWindow(),
+                            destination: SearchWindow { name in
+                                self.otherKnownContacts = name
+                                self.showChat = true
+                            },
                         label: {
                             Image(systemName: "magnifyingglass")
                         })
                 }}
                    
                 
+            }
+            
+            if !otherKnownContacts.isEmpty{
+                NavigationLink("", destination: ChatWindow(otherContacts: otherKnownContacts), isActive: $showChat)
             }
             
         }
