@@ -19,7 +19,7 @@ struct ConversationListWindow: View {
                         label: {
                             HStack{
                                 Circle()
-                                    .frame(width: 50, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                    .frame(width: 50, height: 50, alignment: .center)
                                     .foregroundColor(.purple)
                                 
                                 
@@ -27,16 +27,16 @@ struct ConversationListWindow: View {
                                     .bold()
                                     .font(.system(size: 20))
                                     .foregroundColor(Color(.label))
-                                    .underline(/*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/, color: Color.purple)
+                                    .underline(true, color: Color.purple)
                                     .position(CGPoint(x: 45.0, y: 00.0))
                                     .frame(alignment: .leading)
-                                    
-//                                padding(UIScreen.main.bounds.width/5)
-                                    
-                                    
                                 
-                                    
-                                Spacer()
+                                //                                padding(UIScreen.main.bounds.width/5)
+                                
+                                
+                                
+                                
+                                
                                 
                             }
                             .padding()
@@ -50,19 +50,23 @@ struct ConversationListWindow: View {
                 ToolbarItem(placement: .navigationBarTrailing){
                     Button("Sign Out"){
                         self.signOut()
-                      }
                     }
+                }
+                
                 
                 ToolbarItem(placement: .navigationBarLeading){
-                    NavigationLink(
+                    HStack{
+                        Text("Search")
+                        NavigationLink(
                         destination: SearchWindow(),
                         label: {
                             Image(systemName: "magnifyingglass")
                         })
-                }
+                }}
+                   
                 
             }
- 
+            
         }
        
     }
