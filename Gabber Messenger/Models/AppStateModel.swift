@@ -11,6 +11,7 @@ import SwiftUI
 class AppStateMachine: ObservableObject {
     
     // is user signed in
+    @Published var showSignIn: Bool = true
     
 }
 

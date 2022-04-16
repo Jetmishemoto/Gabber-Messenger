@@ -10,6 +10,7 @@ import SwiftUI
 struct ConversationListWindow: View {
     let KnownContacts = ["Mike","Orange","Tom","Anna","Bro","Bae","Peppercorn"]
     
+    @EnvironmentObject var state: AppStateMachine
     @State var otherKnownContacts: String = ""
     @State var showChat = false
     
@@ -47,6 +48,10 @@ struct ConversationListWindow: View {
                     
                 }
                 
+                if !otherKnownContacts.isEmpty{
+                    NavigationLink("", destination: ChatWindow(otherContacts: otherKnownContacts), isActive: $showChat)
+                }
+                
             }
             .navigationTitle("Messages")
             .toolbar{
@@ -62,8 +67,10 @@ struct ConversationListWindow: View {
                         Text("Search")
                         NavigationLink(
                             destination: SearchWindow { name in
-                                self.otherKnownContacts = name
-                                self.showChat = true
+                                DispatchQueue.main.asyncAfter(deadline: .now()+0.5) {
+                                    self.otherKnownContacts = name
+                                    self.showChat = true
+                                }
                             },
                         label: {
                             Image(systemName: "magnifyingglass")
@@ -73,11 +80,12 @@ struct ConversationListWindow: View {
                 
             }
             
-            if !otherKnownContacts.isEmpty{
-                NavigationLink("", destination: ChatWindow(otherContacts: otherKnownContacts), isActive: $showChat)
-            }
+           
             
         }
+        .fullScreenCover(isPresented: $state.showSignIn, content: {
+            SignInWindow()
+        })
        
     }
     

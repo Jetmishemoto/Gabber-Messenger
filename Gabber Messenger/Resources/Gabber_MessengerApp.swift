@@ -12,12 +12,9 @@ struct Gabber_MessengerApp: App {
     var body: some Scene {
         WindowGroup {
             ConversationListWindow()
+                .environmentObject(AppStateMachine())
         }
     }
 }
 
-struct Gabber_MessengerApp_Previews: PreviewProvider {
-    static var previews: some View {
-        Text("Hello, Me")
-    }
-}
+

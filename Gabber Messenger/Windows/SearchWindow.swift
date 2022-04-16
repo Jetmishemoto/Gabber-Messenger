@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct SearchWindow: View {
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @State var text: String = ""
     
     let KnownContacts = ["Max"]
@@ -36,6 +37,7 @@ struct SearchWindow: View {
                             Spacer()
                         }
                         .onTapGesture {
+                            presentationMode.wrappedValue.dismiss()
                             completion(name)
                         }
                         
