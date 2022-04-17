@@ -34,6 +34,7 @@ struct SignInWindow: View {
                     SecureField("Password", text: $password)
                         .modifier(CustomField())
                     Button(action: {
+                        self.signIn()
                         
                     }, label: {
                         Text("Sign In")
@@ -57,20 +58,18 @@ struct SignInWindow: View {
                 .padding()
                 
             }
-            
-            
-            
-            
-            
-            
-            
         }
-        
-        
-        
-        
-        
+     
     }
+    func signIn() {
+        guard !username.trimmingCharacters(in: .whitespaces).isEmpty,
+              !password.trimmingCharacters(in: .whitespaces).isEmpty,
+              password.count >= 7 else {return}
+        
+        state.signIn(username: username, password: password)
+    }
+    
+   
 }
 
 struct SignInWindow_Previews: PreviewProvider {

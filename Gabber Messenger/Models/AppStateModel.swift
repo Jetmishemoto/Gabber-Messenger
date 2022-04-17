@@ -30,6 +30,10 @@ extension AppStateMachine{
 
 extension AppStateMachine{
     //sign in and sign up
+    func signIn(username: String, password: String ) {
+        //try to signIn
+        
+    }
     
 }
 
