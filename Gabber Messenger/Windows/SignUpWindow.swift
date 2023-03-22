@@ -25,7 +25,7 @@ struct SignUpWindow: View {
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 120, height: 120, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                    Text("Chose a cool username and password")
+                    Text(" A cool username and password")
                         .bold()
                         .font(.system(size: 30))
                         .padding()
